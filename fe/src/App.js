@@ -47,19 +47,24 @@ function App() {
 
     return (
         <div className="row">
-        <div className="col">
-            <h2> Artists </h2>
-            <ol>
-                {artists.map(((artist, idx) => <li key={`artist${artist.id}`}>
-                    <a
-                        href={`http://127.0.0.1:8000/api/v1/artist/${artist.id}`}
-                        onClick={onClickHandlerTracks}
-                        artist_id={artist.id}
-                    >{artist.name}
-                    </a>
-                </li>))}
-            </ol>
+       <div className="col">
+       <h2> Artists </h2>
+    {artists.map((artist, idx) => (
+        <div className="card mb-3" style={{ maxWidth: '300px' }} key={`artist${artist.id}`}>
+            <div className="row g-0">
+                <div className="col-md-4">
+                    <img src="..." className="img-fluid rounded-start" alt="..." />
+                </div>
+                <div className="col-md-8">
+                    <div className="card-body">
+                        <h5 className="card-title">{artist.name}</h5>
+                    </div>
+                </div>
+            </div>
         </div>
+    ))}
+</div>
+
             <div className="col">
                 <h2> Tracks </h2>
                 <ul>
@@ -78,7 +83,7 @@ function App() {
                 {lyrics.map(((lyric, idx) => 
                 <div key={idx}>
                     <div>{lyric.name}</div>
-                    <div style={{ whiteSpace: 'pre-line' }}>{lyric.lyrics}</div>
+                    <div >{lyric.lyrics}</div>
                 </div>))}
             </div>
         </div>
