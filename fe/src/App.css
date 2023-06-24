@@ -55,6 +55,51 @@
 }
 
 
+.track-lyrics{
+
+ background: linear-gradient(180deg, rgba(6, 88, 20, 0.596) 10%, rgba(0, 0, 0, 0.507) 50%);
+ width: 60%;
+ border-radius: 15px; 
+ display: flex;
+ justify-content: space-between;
+ margin-left: 50px;
+ 
+ 
+}
+
+.track-link {
+  display: block;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 250px;
+  
+}
+
+
+.tracks {
+  flex: 1;
+}
+
+.lyrics {
+  flex: 1;
+}
+
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
