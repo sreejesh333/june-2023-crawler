@@ -10,9 +10,9 @@ CORS(app)
 # API endpoints
 @app.route("/api/v1/artist")
 def api_artists():
-    db = models.init_db(app)
+    db = models.init_db(app) 
     artists = db.session.execute(db.select(models.Artist)).scalars()
-    ret = [{"id" : i.id, "name" : i.name} for i in artists]
+    ret = [{"id" : i.id, "name" : i.name, "image_url" : i.image_url} for i in artists]
     return jsonify(dict(artists = ret))
 
 

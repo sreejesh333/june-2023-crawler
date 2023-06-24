@@ -16,7 +16,9 @@ class Artist(db.Model):
     __tablename__ = "artists"
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(100))
+    image_url = db.Column(db.VARCHAR(255))
     tracks = db.relationship("Tracks", back_populates="artist")
+    
 
 class Tracks(db.Model):
     __tablename__ = "tracks"

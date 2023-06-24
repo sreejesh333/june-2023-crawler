@@ -1,3 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.col-md-4{
+  padding: 0;
+  margin: 0;
+  height: 60px;
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -6,6 +19,41 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+
+.artist_column{
+  border-radius: 15px;
+  background: #0E0E0E;
+  padding: 30px;
+
+
+}
+
+.card{
+  border-radius: 4px;
+  background-color: #303030; 
+  max-width: 300px ;
+  height: 60px;
+  padding: 0;
+
+}
+.card-heading{
+  font-size: 29px; 
+  font-weight: 700; 
+}
+.card a{
+  text-decoration: none;
+  color: white;
+}
+.img-fluid {
+  height: 60px;
+  width: 60px;
+  margin: 0;
+  top:-10px;
+  
+
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
