@@ -13,19 +13,7 @@ logger = utils.get_logger()
 
 # Crawler functions
 def crawl_artists(data, count=10):
-    """
-    Inputs :
-      1. HTML string which contains a list of artists. 
-      2. Count is the maximum number of artists that will be returned.
-
-    Outputs:
-      1. A list each element of which is of the form
-         ("artist name", link to tracks of artist)
-
-    Description of what this does:
-      Parses the input HTML, find the list of artists. Creates a list as mentioned in outputs and returns the list
     
-    """
     soup = BeautifulSoup(data, features="html.parser") # Create soup
     artists = soup.find_all("td", {"class": "td-last"}) # Search for all artist td nodes
     ret = []

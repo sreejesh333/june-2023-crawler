@@ -26,20 +26,59 @@
     -->
     <title>React App</title>
     <style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Lemon&display=swap');    
       .navbar{
-        background-color: black;
+        /* background-color: #0E0E0E; */
+        background-color: #0E0E0E;
+      }
+      span.navbar-brand {
+        color: #1ED760;
+        font-size: 28px; 
+        font-family: 'Lemon'; 
+      }
+      .in{
+        color: white;
+      }
+      .wlcm{
+        color: #FFF;
+        font-size: 52px;
+        font-family: DM Sans;
+        font-weight: 900;
+        letter-spacing: -2.08px; 
+        margin-top: 50px;
+      }
+      .heading{
+       
+        text-align: center;
+        
+      }
+
+      .ind{
+        color: #FFF;
+        text-align: center;
+        font-size: 20px;
+        font-family: DM Sans;
+        font-weight: 700;
+        letter-spacing: -0.8px;
+      }
+      #root{
+        margin-top: 50px;
       }
     </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar sticky-top body-tertiary">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">Navbar</span>
+        <span class="navbar-brand ">Lyrics<span class="in">.in</span></span>
       </div>
     </nav>
     <div class="container">
-    <h1 class="display-1"> Welcome to our Lyrics server</h1>
+      <div class="heading">
+    <h1 class=" wlcm "> Welcome to our Lyrics server</h1>
+    <p class="ind">India's Largest Lyrics Server</p>
+  </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.

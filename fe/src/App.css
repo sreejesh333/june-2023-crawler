@@ -120,12 +120,12 @@ a{
 }
 .artist-name{
   margin-top: 70px;
-  margin-left: 30px;
+  margin-left: 20px;
   color: #FFF;
 font-size: 22px;
 font-family: DM Sans;
 font-weight: 700;
-letter-spacing: 0.72px; 
+/* letter-spacing: 0.22px;  */
 }
 
 .track-name{
