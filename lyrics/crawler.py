@@ -88,14 +88,4 @@ def crawl(start_url, nartists, ntracks):
             logger.debug(" Downloading song %s", track_name)
 
 
-# [3.7.3] >>> import lyrics.models
-# [3.7.3] >>> import sqlalchemy as sa
-# [3.7.3] >>> from sqlalchemy.orm import Session
-# [3.7.3] >>>
-# [3.7.3] >>>
-# [3.7.3] >>> engine = sa.create_engine("postgresql:///lyrics")                                      
-# [3.7.3] >>> session = Session(engine)
-# [3.7.3] >>>
-# [3.7.3] >>> a = lyrics.models.Artists(name="Iron Maiden")                                          
-# [3.7.3] >>> a
-# <lyrics.models.Artists object at 0x7f48e1c6aa58>
+
