@@ -41,10 +41,23 @@ function App() {
                 setLyrics([resp.data])
                 console.log(resp.data)
             })
+
+           
+
     }
 
-
-
+    function downloadLyrics() {
+        if (lyrics.length > 0) {
+          const element = document.createElement('a');
+          const lyricsText = lyrics[0].lyrics;
+          const file = new Blob([lyricsText], { type: 'text/plain' });
+          element.href = URL.createObjectURL(file);
+          element.download = 'lyrics.txt';
+          document.body.appendChild(element);
+          element.click();
+          document.body.removeChild(element);
+        }
+      }
     return (
         
 <div className="row">
@@ -128,15 +141,20 @@ function App() {
 </div>
 
 
-    <div className="lyrics">
-        <h2 className='card-heading'>Lyrics</h2>
-        {lyrics.map(((lyric, idx) => (
-            <div key={idx}>
-                <div className="lyrics-nme">{lyric.name}</div>
-                <div className="lyrics-txt">{lyric.lyrics}</div>
-            </div>
-        )))}
-    </div>
+<div className="lyrics">
+        <h2 className="card-heading">Lyrics</h2>
+        {lyrics.map((lyric, idx) => (
+          <div key={idx}>
+            <div className="lyrics-nme">{lyric.name}</div>
+            <div className="lyrics-txt">{lyric.lyrics}</div>
+          </div>
+        ))}
+        {lyrics.length > 0 && (
+          <button className="download-btn" onClick={downloadLyrics}>
+            Download Lyrics
+          </button>
+        )}
+      </div>
  </div>
 </div>
 
