@@ -108,7 +108,7 @@ function App() {
                         
                         
                     <img className='artist-img' src={track.artist.image} alt={track.artist.name} />
-                    <h4>{track.artist.name}</h4>
+                    <h4 className='artist-name'>{track.artist.name}</h4>
                    
                     </div> 
                     
@@ -120,7 +120,7 @@ function App() {
                     className="track-link"
                 >    
                     
-                    <div>{track.name}</div>
+                    <div className='track-name'>{track.name}</div>
                 </a>
             </li>
         )))}

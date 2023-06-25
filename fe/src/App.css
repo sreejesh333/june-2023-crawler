@@ -40,6 +40,8 @@
 .card-heading{
   font-size: 29px; 
   font-weight: 700; 
+  font-family: DM Sans;
+
 }
 .card a{
   text-decoration: none;
@@ -71,10 +73,12 @@
 }
 .tracks {
   flex: 1;
+  margin-top: 30px;
 }
 
 .lyrics {
   flex: 1;
+  margin-top: 30px;
 }
 
 
@@ -107,9 +111,30 @@ a{
 .artist-img{
   border-radius: 40px;
   margin-top: 30px;
+  
 }
 
+.artist-detls{
+  display: flex;
+  flex-direction: row;
+}
+.artist-name{
+  margin-top: 70px;
+  margin-left: 30px;
+  color: #FFF;
+font-size: 22px;
+font-family: DM Sans;
+font-weight: 700;
+letter-spacing: 0.72px; 
+}
 
+.track-name{
+  color: #FFF;
+font-size: 15px;
+font-family: DM Sans;
+font-weight: 700; 
+margin-top: 30px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
