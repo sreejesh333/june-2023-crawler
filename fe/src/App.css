@@ -53,11 +53,14 @@
   
 
 }
+.card-title{
+  color: white;
+}
 
 
 .track-lyrics{
 
- background: linear-gradient(180deg, rgba(6, 88, 20, 0.596) 10%, rgba(0, 0, 0, 0.507) 50%);
+ background: linear-gradient(180deg, rgba(2, 94, 18, 0.596) 10%, rgba(0, 0, 0, 0.507) 40%);
  width: 60%;
  border-radius: 15px; 
  display: flex;
@@ -66,6 +69,14 @@
  
  
 }
+.tracks {
+  flex: 1;
+}
+
+.lyrics {
+  flex: 1;
+}
+
 
 .track-link {
   display: block;
@@ -77,13 +88,6 @@
 }
 
 
-.tracks {
-  flex: 1;
-}
-
-.lyrics {
-  flex: 1;
-}
 
 ul{
   list-style-type: none;
@@ -95,10 +99,17 @@ a{
 
 .card-body{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
+
+.artist-img{
+  border-radius: 40px;
+  margin-top: 30px;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

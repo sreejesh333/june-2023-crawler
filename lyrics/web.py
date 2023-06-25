@@ -24,7 +24,7 @@ def api_artist(artist_id):
         db.select(models.Artist).filter(models.Artist.id == artist_id)
     ).scalar()
     print(dir(artist))
-    ret = [{"id": i.id, "name": i.name} for i in artist.tracks]
+    ret = [{"id": i.id, "name": i.name,"artist":{"name":artist.name,"image":artist.image_url}} for i in artist.tracks]
     return jsonify(dict(tracks=ret))
 
 
@@ -36,7 +36,7 @@ def song(song_id):
     track = db.session.execute(
         db.select(models.Tracks).filter(models.Tracks.id == song_id)
     ).scalar()
-    lyrics = {"name": track.name, "lyrics": track.lyrics}
+    lyrics = {"name": track.name, "lyrics": track.lyrics }
     return jsonify(lyrics)
 
 

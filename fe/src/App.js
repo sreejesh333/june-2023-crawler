@@ -92,23 +92,41 @@ function App() {
 </div>
             
 <div className='track-lyrics'>
+
+
+
+
 <div className="tracks">
     <h2 className='card-heading'>Tracks</h2>
     <ul className='lyrics-list'>
         {tracks.map(((track, idx) => (
             <li key={`track${track.id}`}>
+                
+                
+                {idx === 0 && (
+                    <div className='artist-detls'>
+                        
+                        
+                    <img className='artist-img' src={track.artist.image} alt={track.artist.name} />
+                    <h4>{track.artist.name}</h4>
+                   
+                    </div> 
+                    
+                )}
                 <a
                     href={`http://127.0.0.1:8000/api/v1/song/${track.id}`}
                     onClick={onClickHandlerLyrics}
                     track_id={track.id}
                     className="track-link"
-                >
-                    {track.name}
+                >    
+                    
+                    <div>{track.name}</div>
                 </a>
             </li>
         )))}
     </ul>
 </div>
+
 
     <div className="lyrics">
         <h2 className='card-heading'>Lyrics</h2>
