@@ -136,6 +136,17 @@ font-weight: 700;
 margin-top: 30px;
 }
 
+.lyrics-nme{
+  margin-top: 75px;
+  color: #FFF;
+font-size: 22px;
+font-family: DM Sans;
+font-weight: 700; 
+}
+.lyrics-txt{
+  margin-top: 30px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

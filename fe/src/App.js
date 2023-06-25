@@ -132,8 +132,8 @@ function App() {
         <h2 className='card-heading'>Lyrics</h2>
         {lyrics.map(((lyric, idx) => (
             <div key={idx}>
-                <div>{lyric.name}</div>
-                <div>{lyric.lyrics}</div>
+                <div className="lyrics-nme">{lyric.name}</div>
+                <div className="lyrics-txt">{lyric.lyrics}</div>
             </div>
         )))}
     </div>
