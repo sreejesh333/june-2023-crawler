@@ -153,13 +153,17 @@ font-weight: 500;
  button{
      color: #000000;
      border: none;
-     width: 30px;
-     height:30px;
+     width: 25px;
+     height:25px;
      border-radius: 20px;
      background-color: #57B65F;
  }
  .youtube{
   color:#ce3925;
+  width: 30px;
+  height:30px;
+
+
  }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
