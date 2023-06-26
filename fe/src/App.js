@@ -110,7 +110,7 @@ function App() {
 
 
 <div className="tracks">
-    <h2 className='card-heading'>Tracks</h2>
+    <h2 >Tracks</h2>
     <ul className='lyrics-list'>
         {tracks.map(((track, idx) => (
             <li key={`track${track.id}`}>
