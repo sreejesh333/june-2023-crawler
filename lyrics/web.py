@@ -36,7 +36,7 @@ def song(song_id):
     track = db.session.execute(
         db.select(models.Tracks).filter(models.Tracks.id == song_id)
     ).scalar()
-    lyrics = {"name": track.name, "lyrics": track.lyrics }
+    lyrics = {"name": track.name, "lyrics": track.lyrics, "youtubelink" : track.youtubelink }
     return jsonify(lyrics)
 
 
