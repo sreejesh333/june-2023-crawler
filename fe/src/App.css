@@ -153,15 +153,14 @@ font-weight: 500;
  button{
      color: #000000;
      border: none;
-     width: 25px;
-     height:25px;
-     border-radius: 20px;
+     width: 23px;
+     height:23px;
+     border-radius: 15px;
      background-color: #57B65F;
  }
  .youtube{
   color:#ce3925;
-  width: 30px;
-  height:30px;
+ 
 
 
  }
@@ -169,6 +168,8 @@ font-weight: 500;
   float: right;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
  }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
