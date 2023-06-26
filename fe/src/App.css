@@ -158,6 +158,9 @@ font-weight: 500;
      border-radius: 20px;
      background-color: #57B65F;
  }
+ .youtube{
+  color:#ce3925;
+ }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
