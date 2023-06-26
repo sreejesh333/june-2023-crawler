@@ -147,9 +147,13 @@ function App() {
           <div key={idx}>
             <div className="lyrics-nme">{lyric.name}</div>
             {lyrics.length > 0 && (
+            <div>
+            <a href={lyric.youtubelink}>click</a>
           <button className="download-btn" onClick={downloadLyrics}>
             Download Lyrics
           </button>
+          </div>
+
         )}
             <div className="lyrics-txt">{lyric.lyrics}</div>
           </div>
