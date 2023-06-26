@@ -26,6 +26,7 @@ class Tracks(db.Model):
     artist_id = db.Column(db.Integer, db.ForeignKey("artists.id"))
     name = db.Column(db.String(200))
     lyrics = db.Column(db.Text())
+    youtubelink = db.Column(db.VARCHAR(255))
     artist = db.relationship("Artist", back_populates="tracks")
     
     
