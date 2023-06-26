@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 
 
 import { useState, useRef, useEffect } from 'react';
@@ -146,14 +146,14 @@ function App() {
         {lyrics.map((lyric, idx) => (
           <div key={idx}>
             <div className="lyrics-nme">{lyric.name}</div>
-            <div className="lyrics-txt">{lyric.lyrics}</div>
-          </div>
-        ))}
-        {lyrics.length > 0 && (
+            {lyrics.length > 0 && (
           <button className="download-btn" onClick={downloadLyrics}>
             Download Lyrics
           </button>
         )}
+            <div className="lyrics-txt">{lyric.lyrics}</div>
+          </div>
+        ))}
       </div>
  </div>
 </div>
